@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>EmoSense</title>
+</head>
+<style>
+    body{
+          background-image: url('static/static/images/register2.jpg');
+          background-size: cover;
+          background-position: center;
+        }
+    
+   .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px; 
+            background-color:transparent;
+            opacity: 90%;
+            color: white;
+        }
+       
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            
+        }
+        img{
+          width: 70%;
+          height: 468px;
+          position: relative;
+          left: 50%;
+          margin-top: 7%;
+        }
+        .con{
+          display: flex;
+          width: 100%;
+          height: 468px;
+         position: relative;
+         opacity: 90%;
+         left: 5%;
+
+        }
+   
+     
+       
+</style>
+
+<body >
+  
+  <div  class="navbar" >
+    <h2>CREATE AN ACCOUNT</h2>
+    <a class="nav-link" href="/"><h6>HOME</h6></a>
+</div>
+ 
+<div class="con">
+    <div class="container" style="width:30%;background-color: gainsboro;  height:98%; margin-top: 5%; margin-left: 30%;  border: 1px solid black; padding: 10px 20px; border-radius: 10px;" >
+     
+      <form method="post" action="/register">
+      
+        <div class="fm">
+            <div class="lh">
+                <div class="mb-3 text-center" style="background-color:black; color:white; height:40px; border-radius: 12px 12px 0 0;">
+                    <label for="formGroupExampleInput" class="form-label">Register</label>
+                </div>
+            </div>
+            <div class="labels" style="padding: 10px;">
+                    
+                <div class="mb-3">
+                    <label for="formGroupExampleInput2" class="form-label">Username:</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput2" name='pass'>
+                </div>
+    
+                <div class="mb-3">
+                    <label for="formGroupExampleInput" class="form-label">Password:</label>
+                    <input type="password" class="form-control" id="formGroupExampleInput" name="hos">
+                </div>
+                
+                <div class="mb-3">
+                    <label for="formGroupExampleInput" class="form-label">Mobile:</label>
+                    <input type="number" class="form-control" id="formGroupExampleInput" name="mob">
+                </div>
+                
+                <div class="mb-3">
+                    <label for="formGroupExampleInput" class="form-label">Email:</label>
+                    <input type="email" class="form-control" id="formGroupExampleInput" name="email">
+                </div>
+    
+                <div class="mb-3 text-center">
+                    <button type="submit" style="background-color:black; color: aliceblue;margin-bottom: 20%;">Register</button>
+                </div>
+            </div>
+        </div>
+    </form>
+    
+    </div>
+
+  
+  
+  </div>
+    
+        
+   
+    
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Start</title>
+    <style>
+        body{
+            /* background-image: url("cam.jpg"); */
+            background-image: url({{ url_for('static', filename='cam.jpg') }})
+
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        button{
+            position: absolute;
+            top: 70%;
+            padding: 20px 30px;
+            border: none;
+            border-radius: 30px;
+            margin-left: 80%;
+            background-color: rgb(255, 255, 255);
+            color: rgb(0, 0, 0);       
+            font-size: larger;
+            transition: 0.5s ease-in-out;
+            cursor: pointer;
+        }
+
+        button:hover{
+            background-color: transparent;
+            color: white;
+            font-size: 25px;
+            font-weight: bolder;
+            transform: scale(110%);
+        }
+    
+    </style>
+</head>
+<body style="background-image: url(static/detect.jpg); background-size: cover;background-repeat: no-repeat; ">
+    <a style="color: white; margin-left: 3%;" href="http://127.0.0.1:5000"><img src="static/arrows.png" alt="" style="height: 20px;width: 20px; margin: 1% 0 0 0.5%;"><b style="position: absolute;
+        top: 3.5%;
+        left: 5.5%;"> Back</b></a>
+    <form action="camera">
+        <button><b>Start Camera</b></button>
+        </form> 
+</body>
+</html>
